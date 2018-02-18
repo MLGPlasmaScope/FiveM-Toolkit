@@ -11,7 +11,6 @@
 server_scripts {
 	--'sv_cuff.lua',
 	'sv_grab.lua',
-	'sv_breath.lua',
 	'sv_policeFunctions.lua'
 }
 
@@ -20,7 +19,6 @@ client_scripts {
 	'vehicleControl.lua',
 	--'cl_cuff.lua',
 	'cl_grab.lua',
-	'cl_breath.lua',
 	'cl_devh.lua',
 	'cl_loadout.lua',
 	'cl_policeFunctions.lua'
