@@ -16,7 +16,7 @@ AddEventHandler('grab', function(pl)
 		if (grab == false) then
 			DetachEntity(GetPlayerPed(-1), true, false)	
 	    else
-			TriggerEvent("chatMessage", "[DOJ GRAB]", {255, 255, 255}, "Grabbed!")
+			TriggerEvent("chatMessage", "[KRT GRAB]", {255, 255, 255}, "Grabbed!")
 	    end 
 	end
 	
@@ -51,7 +51,7 @@ AddEventHandler('grabNearClient', function()
     if (closestId ~= nil) then
 		TriggerServerEvent("grabNear", closestId)
 	else
-		 TriggerEvent("chatMessage", "[DOJ GRAB]", {255, 255, 255}, "No one found!")
+		 TriggerEvent("chatMessage", "[KRT GRAB]", {255, 255, 255}, "No one found!")
 	end
 end)
 
