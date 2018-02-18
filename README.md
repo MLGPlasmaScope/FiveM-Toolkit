@@ -11,3 +11,8 @@ Add both folders to your resources
 Add the following lines to your server.cfg
 start kr_functions
 start kr_toolkit
+
+
+
+
+https://gyazo.com/f33eec36fb71a10ed679cb1d64af1b6a
