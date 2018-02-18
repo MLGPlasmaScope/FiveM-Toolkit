@@ -81,9 +81,11 @@ Citizen.CreateThread(function()
         elseif WarMenu.IsMenuOpened('leomenu') then
             if WarMenu.Button('Cuff') then
                 --TriggerEvent("cuff")
-                TriggerEvent('mHandCuff')
+                --TriggerEvent("mHandCuff")
+                TriggerEvent("Cuff_close:getcuff")
             elseif WarMenu.Button('Drag') then
-                TriggerEvent("grabNear")
+                --TriggerEvent("grabNear")
+                TriggerEvent("Cuff_close:getDrag")
             elseif WarMenu.Button('Loadout') then
                 --TriggerEvent("equipPistol")
                 TriggerEvent("yt:policeLoadout",source)
