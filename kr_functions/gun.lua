@@ -16,7 +16,7 @@ Citizen.CreateThread(function()
 		
 
 		if nearPickup then
-			TriggerEvent("chatMessage", "[SADOJ  WEAPON]", {255, 0, 0}, "Near pickup")
+			TriggerEvent("chatMessage", "[KRT  WEAPON]", {255, 0, 0}, "Near pickup")
 		end
 		
 		if carbineEquipped == false then
@@ -31,14 +31,14 @@ Citizen.CreateThread(function()
 		
 		if carbineEquipped then
 			if (tostring(currentWeapon) ~= "-2084633992") and veh == nil then
-				TriggerEvent("chatMessage", "[SADOJ  WEAPON]", {255, 0, 0}, "Must put away your carbine!")
+				TriggerEvent("chatMessage", "[KRT  WEAPON]", {255, 0, 0}, "Must put away your carbine!")
 			end
 			SetCurrentPedWeapon(ped, "WEAPON_CARBINERIFLE", true)
 		end
 		
 		if shotgunEquipped then
 			if tostring(currentWeapon) ~= "487013001" and veh == nil then
-				TriggerEvent("chatMessage", "[SADOJ  WEAPON]", {255, 0, 0}, "Must put away your shotgun!")
+				TriggerEvent("chatMessage", "[KRT  WEAPON]", {255, 0, 0}, "Must put away your shotgun!")
 			end
 			SetCurrentPedWeapon(ped, "WEAPON_PUMPSHOTGUN", true)
 		end
@@ -69,15 +69,15 @@ AddEventHandler("equipCarbine", function()
 		
 		
 	elseif (GetVehicleClass(veh) ~= 18) then
-		TriggerEvent("chatMessage", "[SADOJ  WEAPON]", {255, 0, 0}, "Must be in a police car to grab your carbine!")
+		TriggerEvent("chatMessage", "[KRT  WEAPON]", {255, 0, 0}, "Must be in a police car to grab your carbine!")
 	end
 	
 	
 	if carbineEquipped then
-		TriggerEvent("chatMessage", "[SADOJ  WEAPON]", {255, 0, 0}, "Carbine Equipped!")
+		TriggerEvent("chatMessage", "[KRT  WEAPON]", {255, 0, 0}, "Carbine Equipped!")
 		GiveWeaponToPed(ped, "WEAPON_CARBINERIFLE", 60, false, true)
 	else 
-		TriggerEvent("chatMessage", "[SADOJ  WEAPON]", {255, 0, 0}, "Carbine Unequipped!")
+		TriggerEvent("chatMessage", "[KRT  WEAPON]", {255, 0, 0}, "Carbine Unequipped!")
 	end
 end)
 
@@ -93,10 +93,10 @@ AddEventHandler("equipShotgun", function()
 	end
 	
 	if shotgunEquipped then
-		TriggerEvent("chatMessage", "[SADOJ  WEAPON]", {255, 0, 0}, "Shotgun Equipped!")
+		TriggerEvent("chatMessage", "[KRT  WEAPON]", {255, 0, 0}, "Shotgun Equipped!")
 		GiveWeaponToPed(ped, "WEAPON_PUMPSHOTGUN", 60, false, true)
 	else
-		TriggerEvent("chatMessage", "[SADOJ  WEAPON]", {255, 0, 0}, "Shotgun Unequipped!")
+		TriggerEvent("chatMessage", "[KRT  WEAPON]", {255, 0, 0}, "Shotgun Unequipped!")
 	end
 end)
 
@@ -115,5 +115,5 @@ AddEventHandler("dropGun", function()
 	droppedWeapon = SetPedDropsInventoryWeapon(ped, currentWeapon, -2.0, 0.0, 0.5, 30)
 	
 	
-	TriggerEvent("chatMessage", "[SADOJ  WEAPON]", {255, 0, 0}, "Gun Dropped!")
+	TriggerEvent("chatMessage", "[KRT  WEAPON]", {255, 0, 0}, "Gun Dropped!")
 end)
