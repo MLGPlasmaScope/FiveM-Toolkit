@@ -21,6 +21,5 @@ client_scripts {
 	'cl_grab.lua',
 	'cl_breath.lua',
 	'cl_devh.lua',
-	'cl_loadout.lua',
-	'test.lua'
+	'cl_loadout.lua'
 }
