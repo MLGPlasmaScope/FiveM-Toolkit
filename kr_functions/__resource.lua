@@ -21,5 +21,6 @@ client_scripts {
 	'cl_grab.lua',
 	'cl_devh.lua',
 	'cl_loadout.lua',
-	'cl_policeFunctions.lua'
+	'cl_policeFunctions.lua',
+	'binoculars-c.lua'
 }

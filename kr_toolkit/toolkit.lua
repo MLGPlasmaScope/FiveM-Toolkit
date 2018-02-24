@@ -93,6 +93,8 @@ Citizen.CreateThread(function()
                 TriggerEvent("equipCarbine")
             elseif WarMenu.Button('Toggle Shotgun') then
                 TriggerEvent("equipShotgun")
+			elseif WarMenu.Button('Binoculars') then
+				TriggerEvent("binoculars:Activate")
             elseif WarMenu.Button('Delete Vehicle') then
                 TriggerEvent("wk:deleteVehicle",source)
             elseif WarMenu.MenuButton('Back', 'toolkit') then
