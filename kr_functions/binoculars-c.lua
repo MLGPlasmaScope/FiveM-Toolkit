@@ -26,9 +26,9 @@ local Keys = {
 	["NENTER"] = 201, ["N4"] = 108, ["N5"] = 60, ["N6"] = 107, ["N+"] = 96, ["N-"] = 97, ["N7"] = 117, ["N8"] = 61, ["N9"] = 118
 }
 
-local keybindEnabled = false -- When enabled, binocular are available by keybind
-local binocularKey = Keys["G"]
-local storeBinoclarKey = Keys["BACKSPACE"]
+local keybindEnabled = true -- When enabled, binocular are available by keybind
+local binocularKey = Keys["PAGEUP"]
+local storeBinoclarKey = Keys["LEFTALT"]
 
 --THREADS--
 

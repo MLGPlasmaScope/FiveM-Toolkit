@@ -80,11 +80,8 @@ Citizen.CreateThread(function()
             WarMenu.Display()
         elseif WarMenu.IsMenuOpened('leomenu') then
             if WarMenu.Button('Cuff') then
-                --TriggerEvent("cuff")
-                --TriggerEvent("mHandCuff")
                 TriggerEvent("Cuff_close:getcuff")
             elseif WarMenu.Button('Drag') then
-                --TriggerEvent("grabNear")
                 TriggerEvent("Cuff_close:getDrag")
             elseif WarMenu.Button('Loadout') then
                 --TriggerEvent("equipPistol")
@@ -95,6 +92,7 @@ Citizen.CreateThread(function()
                 TriggerEvent("equipShotgun")
 			elseif WarMenu.Button('Binoculars') then
 				TriggerEvent("binoculars:Activate")
+            elseif WarMenu.MenuButton('Spikes Strips', 'spikes') then
             elseif WarMenu.Button('Delete Vehicle') then
                 TriggerEvent("wk:deleteVehicle",source)
             elseif WarMenu.MenuButton('Back', 'toolkit') then
